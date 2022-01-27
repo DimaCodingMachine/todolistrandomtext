@@ -1,0 +1,76 @@
+// Font
+// :root {
+//     --bs-body-font-family: 'Raleway', sans-serif;
+
+// }
+
+$font-family-base: 'Raleway', sans-serif;
+$h1-font-size: 3rem;
+
+html {
+    font-size: 26px;
+}
+
+h1 {
+    color: #6393;
+}
+
+    // @include media-breakpoint-up(xl) {
+    //     .h1{
+    //         font-size: 4rem; 
+    //     }
+        
+    // }
+
+
+.task-name {
+    background-image: url(../assets/icons/down-chevron.png);
+    background-repeat: no-repeat;
+    background-position: 33px center;
+    background-size: 16px;
+}
+
+.list-group {
+    max-height: 278px;
+    overflow-y: auto;
+}
+
+.card-panel-decor {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    width: 95%;
+    bottom: -20px;
+    z-index: -1;
+    background: #fff;
+
+    &:last-child{
+        bottom: -40px;
+        z-index: -2;
+        width: 90%;
+
+    }
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
